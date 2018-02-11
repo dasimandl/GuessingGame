@@ -4,9 +4,13 @@
     <title>Guessing Game</title>
 
     <!-- Bootstrap and CSS here-->
+    <link href="https://fonts.googleapis.com/css?family=Bevan|Khula:800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Rammetto+One" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
   </head>
   <body>
@@ -14,33 +18,33 @@
       <div id='app' class="container center">
 
         <div id='headers' >
-          <div class="center">
-            <h1 class="display">Guessing Game!</h1>
-            <h3 class="display">Pick a number between 1-100!</h3>
-          </div>
+            <h2 id="title"class="display">Guessing Game!</h1>
+            <h4 id="subtitle"class="display">Pick a number between 1-100</h4>
         </div>
 
         <div id='main' class="center">
           <div id='input-parent'>
-            <input id="player-input" class="form" maxlength="3" placeholder="#" autofocus=autofocus></input>
-            <button id="submit" class="btn btn-success">Go!</button>
+            <input id="player-input" class="form shadow" maxlength="3" placeholder="#" autofocus=autofocus></input>
+            <button id="submit" class="btn btn-success shadow">Go!</button>
+          </div>
+
+          <div id="headers"class="center">
+            <h4>Previous Guesses:</h4>
           </div>
 
           <div id='guesses' class="center">
-            <ul class="center">
-              <li class="guess">-</li>
-              <li class="guess">-</li>
-              <li class="guess">-</li>
-              <li class="guess">-</li>
-              <li class="guess">-</li>
+            <ul class="guess-list">
+              <li class="guess shadow">-</li>
+              <li class="guess shadow">-</li>
+              <li class="guess shadow">-</li>
+              <li class="guess shadow">-</li>
+              <li class="guess shadow">-</li>
             </ul>
           </div>
 
           <div id="menu-btns" class="center">
-            <div>
-              <button type="button" class="btn btn-danger btn-lg">Reset</button>
-              <button type="button" class="btn btn-danger btn-lg">Hint</button>
-            </div>
+              <button id="reset"type="button" class="btn btn-danger btn-lg shadow">Reset</button>
+              <button id="hint"type="button" class="btn btn-danger btn-lg shadow">Hint</button>
           </div>
         </div>
       </div>
@@ -48,7 +52,7 @@
     <div id='footer' class='center'>
         <div class="row align-items-center">
           <div class='col-sm-4'>
-            <img class="img-responsive img-fluid" src='fa-logo@2x.png'>
+            <img class="img-responsive img-fluid" src='images/fa-logo@2x.png'>
           </div>
 
           <div class='col-sm-4'>
@@ -56,10 +60,12 @@
           </div>
 
           <div class='col-sm-4'>
-            <img class="img-responsive img-fluid" src='grace_hopper_academy.png'>
+            <img class="img-responsive img-fluid" src='images/grace_hopper_academy.png'>
           </div>
         </div>
     </div>
 
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/guessingGame.js"></script>
 </html>

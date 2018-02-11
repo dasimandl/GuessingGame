@@ -2,6 +2,9 @@
   .center {
     text-align: center;
   }
+  .shadow {
+    box-shadow: 4px 6px 6px rgba(0,0,0,0.35);
+  }
   .guess {
     background-color: white;
     display: inline;
@@ -10,8 +13,13 @@
     border-color: black;
     border-radius: 10%;
     padding: 0px 25px;
-    margin: 10px 5px 0px 5px;
-    font-size: 60px;
+    font-size: 50px;
+    margin: 0;
+  }
+  body {
+    background-image: url(../images/question-mark-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   ul {
       list-style: none;
@@ -22,19 +30,30 @@
       width: 200px;
       height: 100px;
   }
+  #menu-btns {
+    padding-bottom: 10px;
+  }
   #headers {
-    color: white;
-    letter-spacing: 8px;
-    font-size: 1.5em;
-    /*font-weight: 900;*/
+    color: rgba(255,255,255,.95);
+    letter-spacing: 2px;
+    font-family: 'Khula', sans-serif;
+    text-shadow: 1px 1px 1px #000,
+              -1px -1px 1px #000,
+              -1px 1px 1px #000,
+              1px -1px 1px #000,
+              2px 6px 3px rgba(0,0,0,0.3);
+    /*text-shadow: 1.5px 0 0 #000, 0 -1.5px 0 #000, 0 1.5px 0 #000, -1.5px 0 0 #000,
+                2px 6px 3px rgba(0,0,0,0.3);*/
+    /*text-shadow: 6px 6px 0px rgba(0,0,0,0.2);*/
+    /*text-shadow: 0px 3px 0px #b2a98f,
+                 0px 14px 10px rgba(0,0,0,0.15),
+                 0px 24px 2px rgba(0,0,0,0.1),
+                 0px 34px 30px rgba(0,0,0,0.1);*/
 
   }
   #app {
-      background-color: rgba(44, 59, 62, 0.55);
-      background-image: url(question-mark-dark.jpg);
-      background-repeat: no-repeat;
-      background-position: right;
-      background-size: cover;
+      width: 75%;
+      margin: 50px auto;
   }
   #footer {
       width: 100%;
